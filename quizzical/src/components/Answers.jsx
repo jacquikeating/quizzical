@@ -1,5 +1,37 @@
-export default function Answers() {
+import StartBtn from "./StartBtn"
+
+export default function Answers({ completedQuiz, setQuizStarted, startNewQuiz }) {
+
     return (
-        <div>Answers</div>
+        <>
+            <section className="quiz-answers">
+                {completedQuiz.map((q, index) => {
+                    let questionNum = `q${index}`
+
+                    return (
+                        <article className="question" key={questionNum}>
+                            <h2>{q.question}</h2>
+
+                            <div className="answer-options">
+                                {q.all_answers.map((a, index) => {
+                                const answerNum = questionNum + "a" + index
+
+                                return (
+                                    <div key={answerNum} className="answer">
+                                        <p>{a}</p>
+                                    </div> 
+                                )
+                            })}
+                            </div> 
+                        </article>
+                    )
+                })}
+            </section>
+            <section className="after-quiz">
+                <p>You scored x correct answers</p>
+                <StartBtn startNewQuiz={startNewQuiz} context={"play-again"} />
+            </section>
+        </>
     )
+    
 }
