@@ -84,7 +84,7 @@ form {
   max-width: 37.5rem; /* 600px */
 }
 
-article {
+article.question {
   border-bottom: 0.75px solid #DBDEF0;
   padding: 0.9375rem; /* 15px */
   width: 100%;
@@ -95,6 +95,11 @@ legend {
   margin-bottom: 0.75rem; /* 12px */
   font-weight: 700;
   font-family: Karla, Inter, Arial, sans-serif;
+}
+
+.answer-options {
+  display: flex;
+  gap: 1rem;
 }
 
 button#check-answers {
