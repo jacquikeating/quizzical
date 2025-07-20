@@ -2,7 +2,7 @@ export default function StartBtn({ context, startNewQuiz }) {
 
     let text = ""
 
-    if (context === "splash") {
+    if (context === "start") {
         text = "Start quiz"
     }
 

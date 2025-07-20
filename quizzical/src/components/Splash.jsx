@@ -5,7 +5,7 @@ export default function Splash({ startNewQuiz }) {
         <section>
             <h1>Quizzical</h1>
             <p className="intro">Test your knowledge!</p>
-            <StartBtn context="splash" startNewQuiz={startNewQuiz} />
+            <StartBtn context="start" startNewQuiz={startNewQuiz} />
         </section>
     )
 }
