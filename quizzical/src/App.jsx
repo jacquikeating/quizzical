@@ -1,17 +1,37 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Splash from './components/Splash'
 import Quiz from './components/Quiz'
 import Answers from './components/Answers'
-import { tempQuiz } from './utils'
 
 function App() {
   const [quizStarted, setQuizStarted] = useState(false)
-  const [quiz, setQuiz] = useState(tempQuiz)
+  const [quiz, setQuiz] = useState(null)
   const [completedQuiz, setCompletedQuiz] = useState(null)
+
+  async function getQuizFromAPI() {
+    const res = await fetch("https://opentdb.com/api.php?amount=5&category=9&difficulty=easy&type=multiple")
+    const data = await res.json()
+    const rawQuestions = data.results
+    const questions = rawQuestions.map((q) => {
+      const answerOptions = [...q.incorrect_answers]
+      const randomIndex = Math.floor(Math.random() * 4)
+      answerOptions.splice(randomIndex, 0, q.correct_answer)
+      return ({...q, all_answers: answerOptions })
+    })
+    setQuiz(questions)
+  }
+
+  useEffect(() => {
+    getQuizFromAPI()
+  }, [])
 
   function startNewQuiz() {
     setQuizStarted(true)
-    setCompletedQuiz(null)
+
+    if (completedQuiz) {
+        setCompletedQuiz(null)
+        getQuizFromAPI()
+    }
   }
 
   function renderContent() {
