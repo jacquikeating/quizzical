@@ -4,13 +4,17 @@ import Quiz from './components/Quiz'
 
 function App() {
   const [quizStarted, setQuizStarted] = useState(false)
+
+  function startNewQuiz() {
+    setQuizStarted(true)
+  }
   
   return (
     <main>
       <img src="src/assets/blob-left.png" id="blob-left" aria-hidden="true" />
       <img src="src/assets/blob-right.png" id="blob-right" aria-hidden="true" />
       {!quizStarted? 
-        (<Splash />) : 
+        (<Splash startNewQuiz={startNewQuiz} />) : 
         (<Quiz />)
       } 
     </main>

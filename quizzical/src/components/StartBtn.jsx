@@ -1,4 +1,4 @@
-export default function StartBtn({ context }) {
+export default function StartBtn({ context, startNewQuiz }) {
 
     let text = ""
 
@@ -7,6 +7,6 @@ export default function StartBtn({ context }) {
     }
 
     return (
-        <button className={context}>{text}</button>
+        <button className={context} onClick={startNewQuiz}>{text}</button>
     )
 }

@@ -65,6 +65,7 @@ p.intro {
 }
 
 button.splash {
+  border-radius: 15px;
   width: 12.0625rem; /* 193px */
   height: 3.25rem; /* 52px */
   font-size: 1rem;
