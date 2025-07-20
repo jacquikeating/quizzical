@@ -54,6 +54,10 @@ button:hover, button:focus {
   background-color: #3d487f;
 }
 
+
+
+/* Splash Component ------------------------------------------------- */
+
 h1 {
   font-size: 1.953125rem; /* 31.25px */
   margin-bottom: 0.75rem;
@@ -70,4 +74,31 @@ button.splash {
   height: 3.25rem; /* 52px */
   font-size: 1rem;
   font-weight: 500;
+}
+
+
+
+/* Quiz Component ------------------------------------------------- */
+form {
+  width: calc(100vw - 150px);
+  max-width: 37.5rem; /* 600px */
+}
+
+article {
+  border-bottom: 0.75px solid #DBDEF0;
+  padding: 0.9375rem; /* 15px */
+  width: 100%;
+  text-align: left;
+}
+
+legend {
+  margin-bottom: 0.75rem; /* 12px */
+  font-weight: 700;
+  font-family: Karla, Inter, Arial, sans-serif;
+}
+
+button#check-answers {
+  margin-top: 1.25rem; /* 20px */
+  width: 7.5rem; /* 120px */
+  height: 2.1875rem; /* 35px */
 }

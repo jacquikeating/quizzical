@@ -32,7 +32,7 @@ export default function Quiz({ quiz, setQuiz}) {
                     </article>
                 )
             })}
-            <button>Check answers</button>
+            <button id="check-answers">Check answers</button>
         </form>
     )
 }
