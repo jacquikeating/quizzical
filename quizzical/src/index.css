@@ -135,6 +135,39 @@ button#check-answers {
 
 
 /* Answers Component ------------------------------------------------- */
+h2 {
+  margin-bottom: 0.75rem; /* 12px */
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Karla, Inter, Arial, sans-serif;
+}
+
+div.answer {
+  min-width: 4.125rem; /* 60px */
+  border: 1px solid #4D5B9E;
+  border-radius: 8px;
+  padding: 0.25rem 1rem; /* 4px 6px */
+  font-size: 0.64rem; /* 10.24px */
+  font-weight: 500;
+  cursor: default;
+  opacity: 50%;
+  text-align: center;
+}
+
+.after-quiz {
+  width: 100%;
+  margin-top: 1.25rem; /* 20px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+}
+
+.after-quiz p {
+  font-size: 0.8rem; /* 12.8px */
+  font-weight: bold;
+}
+
 button#play-again {
   width: 6.5rem; /* 104px */
   height: 1.875rem; /* 30px */
