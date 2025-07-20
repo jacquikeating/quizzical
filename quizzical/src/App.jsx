@@ -7,10 +7,12 @@ function App() {
   
   return (
     <main>
+      <img src="src/assets/blob-left.png" id="blob-left" aria-hidden="true" />
+      <img src="src/assets/blob-right.png" id="blob-right" aria-hidden="true" />
       {!quizStarted? 
         (<Splash />) : 
         (<Quiz />)
-      }
+      } 
     </main>
   )
 }
