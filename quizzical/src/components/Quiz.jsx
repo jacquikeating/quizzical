@@ -1,4 +1,4 @@
-export default function Quiz({ quiz, setQuiz}) {
+export default function Quiz({ quiz, setCompletedQuiz}) {
 
     function handleSubmit(formData) {
 
@@ -10,7 +10,7 @@ export default function Quiz({ quiz, setQuiz}) {
         })
 
         console.log(completedQuiz)
-        setQuiz(completedQuiz)
+        setCompletedQuiz(completedQuiz)
     }
     
     return (
