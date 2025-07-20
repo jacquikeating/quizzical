@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import Splash from './components/Splash'
 import Quiz from './components/Quiz'
+import { tempQuiz } from './utils'
 
 function App() {
-  const [quizStarted, setQuizStarted] = useState(false)
+  const [quizStarted, setQuizStarted] = useState(true)
+  const [quiz, setQuiz] = useState(tempQuiz)
 
   function startNewQuiz() {
     setQuizStarted(true)
@@ -15,7 +17,7 @@ function App() {
       <img src="src/assets/blob-right.png" id="blob-right" aria-hidden="true" />
       {!quizStarted? 
         (<Splash startNewQuiz={startNewQuiz} />) : 
-        (<Quiz />)
+        (<Quiz quiz={quiz} setQuiz={setQuiz} />)
       } 
     </main>
   )
