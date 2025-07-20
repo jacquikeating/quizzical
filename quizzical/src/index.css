@@ -135,6 +135,11 @@ button#check-answers {
 
 
 /* Answers Component ------------------------------------------------- */
+.quiz-answers {
+  width: calc(100vw - 150px);
+  max-width: 31.25rem; /* 500px */
+}
+
 h2 {
   margin-bottom: 0.75rem; /* 12px */
   font-size: 1rem;
@@ -142,7 +147,7 @@ h2 {
   font-family: Karla, Inter, Arial, sans-serif;
 }
 
-div.answer {
+.revealed-answer {
   min-width: 4.125rem; /* 60px */
   border: 1px solid #4D5B9E;
   border-radius: 8px;
@@ -152,6 +157,17 @@ div.answer {
   cursor: default;
   opacity: 50%;
   text-align: center;
+}
+
+.correct {
+  border: 1px solid #94D7A2;
+  background-color: #94D7A2;
+  opacity: 1;
+}
+
+.incorrect {
+  border: 1px solid #F8BCBC;
+  background-color: #F8BCBC;
 }
 
 .after-quiz {
