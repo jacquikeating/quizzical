@@ -1,5 +1,12 @@
-export default function StartBtn() {
+export default function StartBtn({ context }) {
+
+    let text = ""
+
+    if (context === "splash") {
+        text = "Start quiz"
+    }
+
     return (
-        <button>Start quiz</button>
+        <button className={context}>{text}</button>
     )
 }
