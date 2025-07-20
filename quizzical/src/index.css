@@ -68,7 +68,7 @@ p.intro {
   margin-bottom: 1.75rem;
 }
 
-button.start {
+button#start {
   border-radius: 15px;
   width: 12.0625rem; /* 193px */
   height: 3.25rem; /* 52px */
@@ -130,4 +130,12 @@ button#check-answers {
   margin-top: 1.25rem; /* 20px */
   width: 7.5rem; /* 120px */
   height: 2.1875rem; /* 35px */
+}
+
+
+
+/* Answers Component ------------------------------------------------- */
+button#play-again {
+  width: 6.5rem; /* 104px */
+  height: 1.875rem; /* 30px */
 }
