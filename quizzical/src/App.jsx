@@ -3,7 +3,7 @@ import Splash from './components/Splash'
 import Quiz from './components/Quiz'
 
 function App() {
-  const [quizStarted, setQuizStarted] = useState(true)
+  const [quizStarted, setQuizStarted] = useState(false)
   
   return (
     <main>

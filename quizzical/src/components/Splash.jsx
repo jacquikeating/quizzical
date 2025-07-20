@@ -1,5 +1,9 @@
+import StartBtn from "./StartBtn"
+
 export default function Splash() {
     return (
-        <>I'm the splash page!</>
+        <section>
+            <StartBtn />
+        </section>
     )
 }
