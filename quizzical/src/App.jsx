@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Splash from './components/Splash'
 import Quiz from './components/Quiz'
+import Answers from './components/Answers'
 import { tempQuiz } from './utils'
 
 function App() {
