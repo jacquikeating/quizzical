@@ -4,7 +4,7 @@ export default function Splash() {
     return (
         <section>
             <h1>Quizzical</h1>
-            <p>Test your knowledge!</p>
+            <p className="intro">Test your knowledge!</p>
             <StartBtn context="splash" />
         </section>
     )

@@ -35,6 +35,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 button {
@@ -45,4 +46,27 @@ button {
   font-weight: 600;
   font-family: Inter, Arial, sans-serif;
   color: #F5F7FB;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover, button:focus {
+  background-color: #3d487f;
+}
+
+h1 {
+  font-size: 1.953125rem; /* 31.25px */
+  margin-bottom: 0.75rem;
+  font-family: Karla, Inter, Arial, sans-serif;
+}
+
+p.intro {
+  margin-bottom: 1.75rem;
+}
+
+button.splash {
+  width: 12.0625rem; /* 193px */
+  height: 3.25rem; /* 52px */
+  font-size: 1rem;
+  font-weight: 500;
 }
