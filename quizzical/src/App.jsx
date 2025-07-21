@@ -10,7 +10,7 @@ function App() {
   const [completedQuiz, setCompletedQuiz] = useState(null)
 
   async function getQuizFromAPI() {
-    const res = await fetch("https://opentdb.com/api.php?amount=5&category=9&difficulty=easy&type=multiple")
+    const res = await fetch("https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple")
     const data = await res.json()
     const rawQuestions = data.results
     const questions = rawQuestions.map((q) => {
