@@ -17,9 +17,9 @@ function App() {
       const answerOptions = [...q.incorrect_answers]
       const randomIndex = Math.floor(Math.random() * 4)
       answerOptions.splice(randomIndex, 0, q.correct_answer)
-      const decodedAnswers = decode(answerOptions.join(", ")).split(", ")
+      const decodedAnswers = decode(answerOptions.join("|")).split("|")
       const decodedQuestion = decode(q.question)
-      return ({...q, question: decodedQuestion, all_answers: decodedAnswers })
+      return ({...q, question: decodedQuestion, all_answers: decodedAnswers, correct_answer: decode(q.correct_answer) })
     })
     setQuiz(questions)
   }
