@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { decode } from 'html-entities'
 import Splash from './components/Splash'
 import Quiz from './components/Quiz'
 import Answers from './components/Answers'
@@ -16,7 +17,9 @@ function App() {
       const answerOptions = [...q.incorrect_answers]
       const randomIndex = Math.floor(Math.random() * 4)
       answerOptions.splice(randomIndex, 0, q.correct_answer)
-      return ({...q, all_answers: answerOptions })
+      const decodedAnswers = decode(answerOptions.join(", ")).split(", ")
+      const decodedQuestion = decode(q.question)
+      return ({...q, question: decodedQuestion, all_answers: decodedAnswers })
     })
     setQuiz(questions)
   }
