@@ -9,7 +9,6 @@ export default function Quiz({ quiz, setCompletedQuiz}) {
             return (completedQuestion)
         })
 
-        console.log(completedQuiz)
         setCompletedQuiz(completedQuiz)
     }
     

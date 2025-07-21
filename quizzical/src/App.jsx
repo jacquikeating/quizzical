@@ -39,7 +39,7 @@ function App() {
 
   function renderContent() {
     if (completedQuiz) {
-      return <Answers completedQuiz={completedQuiz} setQuizStarted={setQuizStarted} startNewQuiz={startNewQuiz} />
+      return <Answers completedQuiz={completedQuiz} startNewQuiz={startNewQuiz} />
     } else if (quizStarted && !completedQuiz) {
       return <Quiz quiz={quiz} setCompletedQuiz={setCompletedQuiz} />
     } else if (!quizStarted) {
