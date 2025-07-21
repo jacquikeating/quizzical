@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 export default function Quiz({ quiz, setCompletedQuiz}) {
 
     function handleSubmit(formData) {
@@ -38,7 +40,7 @@ export default function Quiz({ quiz, setCompletedQuiz}) {
                     </article>
                 )
             })}
-            <button id="check-answers">Check answers</button>
+            <Button size="medium">Check answers</Button>
         </form>
     )
 }

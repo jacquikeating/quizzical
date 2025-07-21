@@ -1,5 +1,5 @@
 import { clsx } from "clsx"
-import StartBtn from "./StartBtn"
+import Button from "./Button"
 
 export default function Answers({ completedQuiz, startNewQuiz }) {
     let score = 0;
@@ -36,7 +36,7 @@ export default function Answers({ completedQuiz, startNewQuiz }) {
             </section>
             <section className="after-quiz">
                 <p>You scored {score}/{completedQuiz.length} correct answers</p>
-                <StartBtn startNewQuiz={startNewQuiz} context={"play-again"} />
+                <Button onClick={startNewQuiz} size="small">Play again</Button>
             </section>
         </>
     )

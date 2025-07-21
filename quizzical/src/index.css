@@ -6,7 +6,7 @@
 
 body {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background-color: #F5F7FB;
   font-family: Inter, Arial, sans-serif;
   color: #293264;
@@ -36,6 +36,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 1.25rem; /* 20px */
 }
 
 button {
@@ -54,7 +55,23 @@ button:hover, button:focus {
   background-color: #3d487f;
 }
 
+.button-large {
+  border-radius: 15px;
+  width: 12.0625rem; /* 193px */
+  height: 3.25rem; /* 52px */
+  font-size: 1rem;
+  font-weight: 500;
+}
 
+.button-medium {
+  width: 7.5rem; /* 120px */
+  height: 2.1875rem; /* 35px */
+}
+
+.button-small {
+  width: 6.5rem; /* 104px */
+  height: 1.875rem; /* 30px */
+}
 
 /* Splash Component ------------------------------------------------- */
 
@@ -66,14 +83,6 @@ h1 {
 
 p.intro {
   margin-bottom: 1.75rem;
-}
-
-button#start {
-  border-radius: 15px;
-  width: 12.0625rem; /* 193px */
-  height: 3.25rem; /* 52px */
-  font-size: 1rem;
-  font-weight: 500;
 }
 
 
@@ -127,12 +136,9 @@ input:checked + label, input:focus + label, input:hover + label {
   border: 1px solid #D6DBF5;
 }
 
-button#check-answers {
+form button {
   margin-top: 1.25rem; /* 20px */
-  width: 7.5rem; /* 120px */
-  height: 2.1875rem; /* 35px */
 }
-
 
 
 /* Answers Component ------------------------------------------------- */
@@ -183,9 +189,4 @@ h2 {
 .after-quiz p {
   font-size: 0.8rem; /* 12.8px */
   font-weight: bold;
-}
-
-button#play-again {
-  width: 6.5rem; /* 104px */
-  height: 1.875rem; /* 30px */
 }
