@@ -1,11 +1,13 @@
-import StartBtn from "./Button"
+import StartBtn from "./Button/Button";
 
 export default function Splash({ startNewQuiz }) {
-    return (
-        <section>
-            <h1>Quizzical</h1>
-            <p className="intro">Test your knowledge!</p>
-            <StartBtn size="large" onClick={startNewQuiz}>Start quiz</StartBtn>
-        </section>
-    )
+  return (
+    <section>
+      <h1>Quizzical</h1>
+      <p className="intro">Test your knowledge!</p>
+      <StartBtn size="large" onClick={startNewQuiz}>
+        Start quiz
+      </StartBtn>
+    </section>
+  );
 }

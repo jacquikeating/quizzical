@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./Button/Button";
 
 export default function Quiz({ quiz, setCompletedQuiz, getQuizFromAPI }) {
   function handleSubmit(formData) {
