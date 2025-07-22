@@ -37,7 +37,6 @@ function App() {
 
   function startNewQuiz() {
     setQuizStarted(true);
-
     if (completedQuiz) {
       setCompletedQuiz(null);
       getQuizFromAPI();

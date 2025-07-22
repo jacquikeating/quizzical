@@ -12,7 +12,6 @@ export default function Quiz({ quiz, setCompletedQuiz, getQuizFromAPI }) {
       };
       return completedQuestion;
     });
-
     setCompletedQuiz(completedQuiz);
   }
 
