@@ -175,3 +175,26 @@ h2 {
   font-size: 0.8rem; /* 12.8px */
   font-weight: bold;
 }
+
+@media (min-width: 900px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  label, button, .revealed-answer {
+    font-size: 0.7rem!important;
+  }
+
+  button {
+    transform: scale(1.1)
+  }
+
+  .button-large {
+    height: 3rem; /* 52px */
+    font-size: 0.8rem!important;
+  }
+
+  .button-medium {
+    width: 8.5rem;
+  }
+}
