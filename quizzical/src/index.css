@@ -140,6 +140,14 @@ form button {
   margin-top: 1.25rem; /* 20px */
 }
 
+.quiz-fallback button {
+  margin-top: 1.25rem; /* 20px */
+}
+
+.quiz-fallback p {
+  max-width: 390px;
+}
+
 
 /* Answers Component ------------------------------------------------- */
 .quiz-answers {
